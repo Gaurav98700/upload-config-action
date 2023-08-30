@@ -1,0 +1,12 @@
+type: remote
+cognite:
+  host: ${BASE_URL}
+  project: ${PROJECT}
+  idp-authentication:
+    client-id: ${CLIENT_ID}
+    secret: ${CLIENT_SECRET}
+    token-url: ${TOKEN_URL}
+    scopes:
+    - ${BASE_URL}/.default
+  extraction-pipeline:
+    external-id: db-extractor-pipeline
